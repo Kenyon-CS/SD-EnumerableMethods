@@ -9,6 +9,6 @@ This is an activity to learn about Enumerable Methods in Ruby
 1. How can we improve `createCountTableFilteredSimple` using predicate selectors? Rewrite in `createCountTableFilteredShort`
 1. Review `verbsConjugated.txt`.  How can we count verb unifying the counts based on verb tense?
 1. Complete the code `readVerbs`to create a hash where each verb for points to present tense version
-# e.g. {"scold"=>"scold","scolds"=>"scold","scolding"=>"scold","scolded"=>"scold","scolded"=>"scold"}
+e.g. `{"scold"=>"scold","scolds"=>"scold","scolding"=>"scold","scolded"=>"scold","scolded"=>"scold"}`
 1. Now complete the code `createCountVerbs` to crearte a table of counts using the hash from above to unify the counts.
 
