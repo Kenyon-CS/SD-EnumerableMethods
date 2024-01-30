@@ -22,22 +22,7 @@ end
 
 # Create count table of text count hash counting words from whitelist 
 def createCountTableFilteredSimple(lines,whitelist) 
-    table = {}
-    text.each do |line|
-        words = line.split(" ")
-        words.each do |word|
-            puts word
-            word=word.gsub(/\W/, '').downcase.chomp
-            if whitelist.include?(word)
-                if table.include?(word)
-                    table[word]+=1
-                else
-                    table[word]=1
-                end
-            end
-        end
-    end
-    table.sort_by {|key,value| value}    
+
 end
 
 # Create count table of text count hash counting words from whitelist 
