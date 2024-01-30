@@ -33,24 +33,7 @@ end
 
 # Create a count of verbs, combining all forms of verbs into the root verb (present tense)
 def createCountVerbs(verbHash,words)
-    verbCount = {}
-    words.each do |w|
-        if verbHash.include?(w)
-            #puts "#{w}, #{verbHash[w]}, #{verbCount[w]}, #{verbCount[verbHash[w]]}"
-            if !verbCount.include?(verbHash[w])
-                puts "#{verbHash[w]} not in  verbCount"
-                verbCount[verbHash[w]]=0
-            end
-            if verbCount.include?(w)
-                print "<"
-                verbCount[verbHash[w]]+=1
-            else
-                print ">"
-                verbCount[verbHash[w]]=1
-            end
-        end
-    end
-    verbCount.sort_by {|key,value| value}
+
 end
 
 def displayTable(aHash)
